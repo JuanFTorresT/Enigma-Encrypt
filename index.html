@@ -1,28 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/estilos.css">
 
-    
+    <title>Enigma Encrypt</title>
 
-    <title>Document</title>
 </head>
 
 <body class="grid-container">
 
+    <!--CABECERA-->
 
     <header>
+
         <div class="contenedor-head">
             <h1 id="logo">Enigma Encrypt</h1>
             <img id="logos" src="assets/Group 1.png" alt="">
         </div>
+
     </header>
     
+    <!--
+        CONTENEDOR MAIN | CUADRO INGRESAR TEXTO | CUADRO RESPUESTAS | BOTONES ENCRIPTAR / DESENCRIPTAR
+        BOTÓN COPIAR
+    -->
+
     <main>
+
         <div class="contenedor-main">
 
             <div class="mensaje">
@@ -30,13 +41,17 @@
                 <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí..."></textarea>
                 
                 <div class="reglas">
+                
                     <img id="warning" src="assets/warning.png" alt="">
                     <p id="reglas">Solo letras minusculas y sin acentos</p>
+
                 </div>
                 
                 <div class="botones">
+
                     <input type="button" value="Encriptar" id="boton-encriptar">
                     <input type="button" value="Desencriptar" id="boton-desencriptar">
+
                 </div>
 
             </div>
@@ -47,7 +62,9 @@
                 <div id="antes-respuesta">
 
                 <div class="imagen">
+
                     <img id="imagen" src="assets/Muñeco.png" alt="">
+
                 </div>
                 
                 <p id="no-encontrado"><strong>¡Ningún mensaje fue encontrado!</strong></p>
@@ -60,32 +77,43 @@
                 </textarea>
 
                 <button class="copia" id="boton-copia" onclick="copiarAlPortapapeles()">Copiar</button>
+            
             </div>
 
         </div>
 
     </main>
 
+    <!--PIE DE PAGINA-->
+
     <footer>
+
         <div class="piepagina">
-        <p id="desarrollador">
-            Desarrollado por Juan Felipe Torres T.
 
-        </p>
+            <p id="desarrollador">
 
-        <div class="logoredes">
-        <a target="_blank"  href="https://www.linkedin.com/in/juan-felipe-torres-t/"><img id="linkedin" src="assets/linkedin-round-svgrepo-com.png" alt=""></a>
-        <a target="_blank"  href="https://github.com/JuanFTorresT"><img id="linkedin" src="assets/github-142-svgrepo-com.png" alt=""></a>
-        </div>
-        
+                Desarrollado por Juan Felipe Torres T.
 
-        <p id="copyr">Copyright ©2023 Juan Torres. Todos los derechos reservados.</p>
+            </p>
+
+            <div class="logoredes">
+
+            <a target="_blank"  href="https://www.linkedin.com/in/juan-felipe-torres-t/"><img id="linkedin" src="assets/linkedin-round-svgrepo-com.png" alt=""></a>
+            <a target="_blank"  href="https://github.com/JuanFTorresT"><img id="linkedin" src="assets/github-142-svgrepo-com.png" alt=""></a>
+            
+            </div>
+            
+
+            <p id="copyr">Copyright ©2023 Juan Torres. Todos los derechos reservados.</p>
+
         </div>
         
     </footer>
     
+    <!--LLAMADO ARCHIVO JAVASCRIPT-->
 
     <script src="javascript/encriptacion.js"></script>
 
 </body>
+
 </html>
